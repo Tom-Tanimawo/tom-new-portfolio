@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101110">
+  <meta name="description" content="Portfolio of Tom Tanimawo Temedauemi, a frontend developer building thoughtful, responsive web experiences.">
+  <title>Tom Tanimawo Temedauemi — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#101110;--panel:#171917;--text:#f3f3ee;--muted:#9b9e96;--line:#2b2e2a;--lime:#c2f36b;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:"Plus Jakarta Sans",Arial,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin-inline:auto}.mono,.eyebrow,.tag,.nav-index{font-family:"DM Mono",monospace}.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--lime)}
+    header{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;position:sticky;top:0;z-index:10;background:rgba(16,17,16,.92);backdrop-filter:blur(16px)}.nav{display:flex;align-items:center;justify-content:space-between}.brand{font-size:14px;font-weight:800;letter-spacing:.08em}.brand span{color:var(--lime)}.nav-links{display:flex;align-items:center;gap:34px;font-size:13px;color:#c2c4bd}.nav-links a:hover{color:var(--lime)}.nav-cta{padding:10px 16px;border:1px solid #5b624e;border-radius:99px;color:var(--lime)!important}.menu-toggle{display:none;background:none;color:var(--text);border:1px solid var(--line);border-radius:8px;width:44px;height:42px;cursor:pointer;align-items:center;justify-content:center}.menu-toggle svg{width:22px;height:22px}
+    main{overflow:hidden}.hero{min-height:650px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:50px;padding-block:90px 105px}.hero-copy{position:relative;z-index:1}.hero h1{font-size:50px;line-height:1.08;letter-spacing:-.055em;margin:22px 0 16px;color:#fff;font-weight:800}.hero h1 span{color:var(--lime)}.lead{max-width:570px;color:#b0b2ab;font-size:17px;line-height:1.8;margin:0}.hero-actions{display:flex;align-items:center;gap:22px;margin-top:34px}.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:14px 20px;border-radius:5px;background:var(--lime);color:#141710;font-size:13px;font-weight:800;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px);background:#d2ff82}.text-link{font-size:13px;color:#d2d3ce}.text-link:hover{color:var(--lime)}.arrow{font-size:18px}.hero-art{position:relative;min-height:420px;display:grid;place-items:center}.halo{position:absolute;width:min(390px,90%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 55% 40%,#364426 0,#232c1c 46%,#181c16 70%,transparent 71%)}.profile-frame{position:relative;width:280px;height:350px;border:1px solid #626f4e;border-radius:140px 140px 8px 8px;overflow:hidden;background:linear-gradient(145deg,#333c2c,#1a1e18);display:grid;place-items:center}.profile-frame img{width:100%;height:100%;object-fit:cover}.profile-placeholder{text-align:center;padding:25px;color:#dfe5d2}.profile-placeholder svg{width:62px;height:62px;color:var(--lime);opacity:.8}.profile-placeholder p{font-size:11px;line-height:1.6;color:#adb39f;margin:14px 0 0}.float-card{position:absolute;right:0;bottom:30px;background:#1b1e19;border:1px solid #343a2e;padding:14px 17px;border-radius:6px;font-size:11px;color:#b9bdb1;box-shadow:0 12px 40px #0005}.float-card strong{display:block;color:var(--lime);font-family:"DM Mono",monospace;font-size:12px;margin-bottom:3px}.availability{position:absolute;left:0;top:62px;font-size:11px;color:#d2d4ce;display:flex;align-items:center;gap:8px}.dot{width:7px;height:7px;background:var(--lime);border-radius:50%;box-shadow:0 0 12px #c2f36b}
+    .section{padding:100px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:46px}.section h2{font-size:clamp(32px,5vw,48px);letter-spacing:-.05em;line-height:1.1;margin:12px 0 0}.section-intro{max-width:390px;color:var(--muted);font-size:14px;margin:0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.about-copy{font-size:17px;color:#b8bbb3;max-width:540px}.about-copy p{margin:0 0 18px}.stat-row{display:flex;gap:40px;margin-top:32px}.stat strong{display:block;font-size:28px;color:var(--lime);letter-spacing:-.04em}.stat span{font-size:11px;color:var(--muted)}.skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{background:var(--panel);border:1px solid var(--line);padding:19px 17px;min-height:148px;border-radius:6px;transition:border-color .2s,transform .2s}.skill:hover{border-color:#84965f;transform:translateY(-3px)}.skill-num{color:var(--lime);font-size:10px}.skill h3{font-size:15px;margin:14px 0 7px}.skill p{font-size:11px;line-height:1.65;color:var(--muted);margin:0}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{min-height:255px;background:var(--panel);border:1px solid var(--line);padding:24px;border-radius:6px;display:flex;flex-direction:column;justify-content:space-between}.project-visual{height:100px;border-radius:4px;background:linear-gradient(135deg,#292f23,#1c2119);display:grid;place-items:center;color:var(--lime);font-family:"DM Mono",monospace;font-size:13px;letter-spacing:.1em}.project h3{font-size:17px;margin:20px 0 5px}.project p{font-size:12px;color:var(--muted);margin:0}.project .tag{font-size:10px;color:#c8ccbf;margin-top:15px}.contact{padding:90px 0 100px;border-top:1px solid var(--line);text-align:center}.contact h2{font-size:clamp(38px,7vw,72px);letter-spacing:-.06em;line-height:1.04;margin:16px auto;max-width:750px}.contact p{color:var(--muted);font-size:14px;margin:0 auto 28px}.contact .button{padding:16px 24px}footer{border-top:1px solid var(--line);padding:22px 0;color:#858981;font-size:11px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:18px}.footer-links{display:flex;gap:20px}.footer-links a:hover{color:var(--lime)}
+    @media(max-width:850px){.hero{grid-template-columns:1fr .8fr;gap:20px;min-height:590px}.profile-frame{width:235px;height:300px}.hero-art{min-height:360px}.skills-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:35px}.projects{grid-template-columns:1fr 1fr}}
+    @media(max-width:640px){.wrap{width:min(var(--max),calc(100% - 36px))}header{height:68px}.menu-toggle{display:flex}.nav-links{display:none;position:absolute;top:67px;left:0;right:0;background:#151714;border-bottom:1px solid var(--line);padding:18px 22px 23px;flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:13px 0;border-bottom:1px solid #292c27}.nav-links .nav-cta{border:0;border-bottom:1px solid #292c27;border-radius:0;padding:13px 0}.hero{grid-template-columns:1fr;padding-block:68px 68px;gap:22px}.hero h1{font-size:50px}.lead{font-size:15px}.hero-art{grid-row:1;min-height:310px}.profile-frame{width:210px;height:270px}.halo{width:280px}.availability{left:5%;top:20px}.float-card{right:4%;bottom:15px}.hero-copy{grid-row:2}.hero-actions{gap:16px;flex-wrap:wrap}.section{padding:72px 0}.section-head{align-items:start;flex-direction:column;margin-bottom:30px}.about-grid{grid-template-columns:1fr;gap:32px}.projects{grid-template-columns:1fr}.project{min-height:220px}.project-visual{height:90px}.contact{padding:70px 0}.footer-inner{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap;gap:16px}.stat-row{gap:28px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Tom Temedauemi home" style="color: greenyellow;">TOM-LIGHTS ENTERPRISES <span>.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a class="nav-cta" href="tomrichest14@gmail.com">Hire me <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">Frontend developer <span aria-hidden="true">·</span> Benin City, Nigeria</div>
+        <h1>TOM TANIMAWO<br><span>TEMEDAUEMI</span></h1>
+        <p class="lead">I’m a frontend developer who turns ideas into polished, responsive web experiences. I work with HTML, CSS, JavaScript, and React to create clear layouts, accessible interactions, and interfaces that feel intuitive on phones, tablets, and desktops. From the first wireframe to the final detail, I focus on making websites useful, reliable, and enjoyable to use.</p>
+        <div class="hero-actions"><a class="button" href="tomrichest14@gmail.com">Hire me <span class="arrow" aria-hidden="true">↗</span></a><a class="text-link" href="#work">Explore my work <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="hero-art" aria-label="Profile picture area">
+        <div class="halo" aria-hidden="true"></div><div class="availability"><span class="dot"></span> Open to opportunities</div>
+        <div class="profile-frame">
+          <!-- Replace profile.jpg with your own image file to display your portrait. -->
+          <img src="./profile image.jpeg" width="60" height="50" alt="Portrait of Tom Tanimawo Temedauemi" onerror="this.hidden=true">
+          <div class="profile-placeholder"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="32" cy="22" r="11"/><path d="M11 57c1-13 8-20 21-20s20 7 21 20"/></svg><p>Add your portrait as<br><span class="mono">profile.jpg</span></p></div>
+        </div><div class="float-card"><strong>01 / 04</strong>Curious by nature.<br>Focused on the details.</div>
+      </div>
+    </section>
+    <section class="section" id="about"><div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">A little about me</div><h2>Good design works.<br>Great code makes it real.</h2></div><p class="section-intro">I bring ideas to life with thoughtful interfaces, accessible patterns, and a focus on the people using them.</p></div>
+      <div class="about-grid"><div class="about-copy"><p>I’m Tom, a frontend developer based in Benin City, Nigeria. I enjoy taking a project from an early idea to a thoughtful, usable interface, with careful attention to structure, visual consistency, and the way each interaction feels.</p><p>My toolkit includes HTML, CSS, JavaScript, React, and responsive design. I value semantic markup, accessible patterns, maintainable components, and performance, and I’m always improving my process through practice and feedback. I’m keen to contribute to a team, collaborate with designers and developers, and build digital products that solve real needs.</p><div class="stat-row"><div class="stat"><strong>08</strong><span>Core technologies</span></div><div class="stat"><strong>100%</strong><span>Care in every detail</span></div></div></div>
+        <div class="skills-grid" id="skills">
+          <article class="skill"><span class="skill-num mono">01 / MARKUP</span><h3>HTML</h3><p>Structures page content into clear, meaningful sections.</p></article>
+          <article class="skill"><span class="skill-num mono">02 / STYLE</span><h3>CSS</h3><p>Shapes the look, layout, and responsive feel of a site.</p></article>
+          <article class="skill"><span class="skill-num mono">03 / UTILITY CSS</span><h3>Tailwind CSS</h3><p>Builds custom interfaces quickly with utility classes.</p></article>
+          <article class="skill"><span class="skill-num mono">04 / COMPONENTS</span><h3>Bootstrap</h3><p>Speeds up responsive layouts with reusable components.</p></article>
+          <article class="skill"><span class="skill-num mono">05 / INTERACTION</span><h3>JavaScript</h3><p>Adds behavior, logic, and dynamic interactions to pages.</p></article>
+          <article class="skill"><span class="skill-num mono">06 / UI LIBRARY</span><h3>React</h3><p>Creates interactive interfaces from reusable components.</p></article>
+          <article class="skill"><span class="skill-num mono">07 / PROGRAMMING</span><h3>Python</h3><p>A versatile language for scripting, automation, and web tools.</p></article>
+          <article class="skill"><span class="skill-num mono">08 / RESPONSIVE</span><h3>Web design</h3><p>Adapts digital experiences to phones, tablets, and desktops.</p></article>
+        </div>
+      </div>
+    </div></section>
+    <section class="section" id="work"><div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Selected work</div><h2>Things I can build.</h2></div><p class="section-intro">A few directions for the kind of useful, polished web experiences I love making.</p></div>
+      <div class="projects">
+        <article class="project"><div><div class="project-visual">01 — COMMERCE</div><h3>Digital storefront</h3><p>A clean, responsive shopping experience for a modern brand.</p></div><div class="tag">React · CSS · JavaScript</div></article>
+        <article class="project"><div><div class="project-visual">02 — DASHBOARD</div><h3>Insight dashboard</h3><p>A clear interface that helps people make sense of their data.</p></div><div class="tag">HTML · Tailwind · JavaScript</div></article>
+        <article class="project"><div><div class="project-visual">03 — PORTFOLIO</div><h3>Personal portfolio</h3><p>A thoughtful home on the web for a creative professional.</p></div><div class="tag">React · Bootstrap · CSS</div></article>
+      </div>
+    </div></section>
+    <section class="contact" id="contact"><div class="wrap"><div class="eyebrow">Have a project in mind?</div><h2>Let’s make something<br><span style="color:var(--lime)">great together.</span></h2><p>Tell me what you're working on. I’d love to hear about it.</p><a class="button" href="mailto:hello@tomtemedauemi.com?subject=Let%E2%80%99s%20work%20together">Hire me <span class="arrow" aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© <span id="year"></span> Tom Tanimawo Temedauemi</span><span>Designed & built with care.</span><div class="footer-links"><a href="#home">Back to top ↑</a><a href="tomrichest14@gmail.com">Email me</a></div></div></footer>
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('#nav-links');
+    menuButton.addEventListener('click', () => {
+      const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!isOpen));
+      menuButton.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+      menu.classList.toggle('open', !isOpen);
+    });
+    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      menu.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.setAttribute('aria-label', 'Open navigation menu');
+    }));
+    document.querySelector('#year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
